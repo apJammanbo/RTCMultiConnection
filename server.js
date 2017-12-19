@@ -9,7 +9,7 @@ function resolveURL(url) {
 }
 
 // Please use HTTPs on non-10.70.205.87 domains.
-var isUseHTTPs = false;
+var isUseHTTPs = true;
 
 // var port = 443;
 var port = process.env.PORT || 9001;
