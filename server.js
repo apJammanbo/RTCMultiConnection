@@ -83,7 +83,7 @@ function serverHandler(request, response) {
                 response.writeHead(200, {
                     'Content-Type': 'text/html'
                 });
-                response.write('<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/demos/"></head><body></body></html>');
+                response.write('<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/"></head><body></body></html>');
                 response.end();
                 return;
             }
