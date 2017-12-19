@@ -80,11 +80,11 @@ function serverHandler(request, response) {
             stats = fs.lstatSync(filename);
 
             if (filename && filename.search(/demos/g) === -1 && stats.isDirectory()) {
-                response.writeHead(200, {
-                    'Content-Type': 'text/html'
-                });
-                response.write('<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/"></head><body></body></html>');
-                response.end();
+                // response.writeHead(200, {
+                //     'Content-Type': 'text/html'
+                // });
+                // response.write('<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/demos/"></head><body></body></html>');
+                // response.end();
                 return;
             }
         } catch (e) {
